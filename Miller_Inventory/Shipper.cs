@@ -9,7 +9,7 @@ namespace Miller_Inventory
     class Shipper
     {
         // Variable-length list for cart items:
-        List<IShippable> cart = new List<IShippable>();
+        private List<IShippable> cart = new List<IShippable>();
 
         //  Adds an item to the cart:
         public void Add(IShippable product)
