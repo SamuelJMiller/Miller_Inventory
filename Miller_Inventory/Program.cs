@@ -40,7 +40,7 @@ namespace Miller_Inventory
         }
 
         static void Main(string[] args)
-        {
+        {           
             // Shopping cart:
             Shipper cart = new Shipper();
 
