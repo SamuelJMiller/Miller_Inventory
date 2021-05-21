@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Miller_Inventory
 {
-    class Bicycle
+    class Bicycle : IShippable
     {
+        public decimal ShipCost { get; }
+        public string Product { get; }
     }
 }

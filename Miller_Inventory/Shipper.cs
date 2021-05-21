@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace Miller_Inventory
 {
-    class LawnMower : IShippable
+    class Shipper
     {
-        public decimal ShipCost { get; }
-        public string Product { get; }
+        //  Adds an item to the "cart"
+        public void Add(IShippable product)
+        {
+
+        }
     }
 }
