@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 
 // Samuel Miller
 // IT112 
@@ -7,6 +8,11 @@ namespace Miller_Inventory
 {
     class Program
     {
+        public Program(string crypto_message)
+        {
+            
+        }
+
         static void show_menu()
         {
             Console.WriteLine("Choose from the following options:" +
@@ -37,6 +43,8 @@ namespace Miller_Inventory
         {
             // Shopping cart:
             Shipper cart = new Shipper();
+
+            
 
             while (true)
             {
