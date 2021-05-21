@@ -10,5 +10,11 @@ namespace Miller_Inventory
     {
         public decimal ShipCost { get; }
         public string Product { get; }
+
+        public Crackers()
+        {
+            this.ShipCost = 0.57M;
+            this.Product = "Crackers";
+        }
     }
 }
