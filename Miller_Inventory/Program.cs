@@ -68,20 +68,20 @@ namespace Miller_Inventory
                         int[] manifest = cart.get_shipment_manifest();
 
                         Console.Write("Shipment manifest:" +
-                            "\n" + manifest[0] + " ");
+                            "\n" + manifest[0]);
                         display_manifest_item("Bicycle", manifest[0]);
 
-                        Console.Write(manifest[1] + " ");
+                        Console.Write(manifest[1]);
                         display_manifest_item("Lawn Mower", manifest[1]);
 
-                        Console.Write(manifest[2] + " ");
+                        Console.Write(manifest[2]);
                         display_manifest_item("Baseball Glove", manifest[2]);
 
                         Console.Write(manifest[3] + " ");
                         Console.WriteLine("Crackers");
 
                         Console.WriteLine("Press any key to continue");
-                        Console.Read();
+                        Console.ReadLine();
 
                         break;
                     case 6:
