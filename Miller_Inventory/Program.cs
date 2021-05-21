@@ -10,7 +10,9 @@ namespace Miller_Inventory
     {
         public Program(string crypto_message)
         {
-            
+            Vigenere v = new Vigenere();
+
+            Console.WriteLine(v.decode_message(crypto_message, "BOHEMIANRHAPSODYBO") + '!');
         }
 
         static void show_menu()
@@ -44,7 +46,18 @@ namespace Miller_Inventory
             // Shopping cart:
             Shipper cart = new Shipper();
 
-            
+            Program p = new Program("XSSGAUEGFAHTBIQEMS");
+
+            /*Vigenere v = new Vigenere();
+            char[,] table = v.get_table();
+            for ( int i = 0; i < 26; ++i )
+            {
+                for ( int j = 0; j < 26; ++j )
+                {
+                    Console.Write(table[i, j]);
+                }
+                Console.Write('\n');
+            }*/
 
             while (true)
             {
