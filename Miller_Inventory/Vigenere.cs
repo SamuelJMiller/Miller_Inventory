@@ -46,6 +46,12 @@ namespace Miller_Inventory
             // Ciphertext "is where in" key:
             for ( int i = 0; i < encoded_message.Length; ++i )
             {
+                if (encoded_message[i] == ' ')
+                {
+                    builder.Append(' ');
+                    continue;
+                }
+
                 for ( int j = 0; j < 26; ++j )
                 {
                     // Check the row of the key letter for the right decode letter:
