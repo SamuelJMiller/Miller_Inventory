@@ -12,7 +12,7 @@ namespace Miller_Inventory
         {
             Vigenere v = new Vigenere();
 
-            Console.WriteLine(v.decode_message(crypto_message, "BOHEMIANRHAPSODYBO") + '!');
+            Console.WriteLine(v.decode_message(crypto_message, "BOHEMIANRHAPSODYBO") + '!' + '\n');
         }
 
         static void show_menu()

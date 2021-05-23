@@ -44,15 +44,15 @@ namespace Miller_Inventory
             StringBuilder builder = new StringBuilder();
 
             // Ciphertext "is where in" key:
-            for ( int j = 0; j < encoded_message.Length; ++j )
+            for ( int i = 0; i < encoded_message.Length; ++i )
             {
-                for ( int i = 0; i < 26; ++i )
+                for ( int j = 0; j < 26; ++j )
                 {
                     // Check the row of the key letter for the right decode letter:
-                    if (vigenere_square[i, keyword[i] - 65] == encoded_message[i])
+                    if (vigenere_square[j, keyword[i] - 65] == encoded_message[i])
                     {
                         // Then expand the decoded message:
-                        builder.Append(vigenere_square[i, 0]);
+                        builder.Append(vigenere_square[j, 0]);
                     }
                 }
             }
