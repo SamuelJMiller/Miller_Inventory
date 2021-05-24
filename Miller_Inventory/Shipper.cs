@@ -17,7 +17,7 @@ namespace Miller_Inventory
             cart.Add(product);
         }
 
-        public decimal get_total_cost()
+        public string get_total_cost()
         {
             decimal total = 0;
 
@@ -28,7 +28,7 @@ namespace Miller_Inventory
                 total += cart[i].ShipCost;
             }
 
-            return total;
+            return total.ToString("C");
         }
 
         public int[] get_shipment_manifest()

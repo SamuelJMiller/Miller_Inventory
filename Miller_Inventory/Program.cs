@@ -107,7 +107,7 @@ namespace Miller_Inventory
                         break;
                     case 6:
                         // Show message and exit program:
-                        Console.WriteLine("Total shipping cost for this order is $" + cart.get_total_cost());
+                        Console.WriteLine("Total shipping cost for this order is " + cart.get_total_cost());
                         return;
                 }
             }
